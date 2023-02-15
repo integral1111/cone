@@ -137,8 +137,13 @@ function hideText(number) {
 
 
 function alertText(number) {
-	alert(`It's our${number}th memory! Thank you for pressing it. :)`);
-}
+    if (number === 1) {
+        alert(`It's our ${number}st memory! Thank you for pressing it. :)`); 
+    } else if (number === 2) {
+        alert(`It's our ${number}nd memory! Thank you for pressing it. :)`); 
+    } else {
+        alert(`It's our ${number}th memory! Thank you for pressing it. :)`); 
+    }
     </script>
   </head>
   <body>
